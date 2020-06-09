@@ -8,7 +8,7 @@ const messages = [
     id: 1,
     avatar: require('../assets/michael.jpg'),
     name: 'Michael Fan',
-    message: 'Si Fanr is there class today?',
+    message: 'Sir is there class today?',
     unreadMessage: true,
     isActive: true,
     time: 'Sat',

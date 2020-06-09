@@ -1,7 +1,9 @@
 import React from 'react'
 import { StyleSheet, Text, View, FlatList, TouchableOpacity, Image, ScrollView } from 'react-native'
-import Icon from './Icon'
+
+import AppText from './AppText'
 import colors from '../config/colors'
+import Icon from './Icon'
 
 const friends = [
   {
@@ -75,7 +77,7 @@ const Friends = () => {
             </View>
           </View>
           {item.isActive && <View style={styles.active} />}
-          <Text style={styles.text}>{item.name}</Text>
+          <AppText style={styles.text}>{item.name}</AppText>
         </View>
       </TouchableOpacity>
     )
@@ -89,7 +91,7 @@ const Friends = () => {
       <View style={styles.container}>
         <View style={styles.iconContainer}>
           <Icon name='add' size={55} />
-          <Text>Your Story</Text>
+          <AppText>Your Story</AppText>
         </View>
         <FlatList
           horizontal
